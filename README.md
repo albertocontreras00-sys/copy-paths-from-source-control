@@ -1,25 +1,29 @@
 # Copy Paths from Source Control
 
-Copy one or more file paths directly from VS Code's Source Control panel.
+Copy full or relative file paths for multiple selected files directly from VS Code's Source Control panel.
 
 ![Copy Paths from Source Control demo](images/demo.gif)
 
 ## Features
 
 - Copy full paths for one or more selected files in Source Control
-- Copy workspace-relative paths for one or more selected files
-- Works from the Source Control context menu on SCM resource items
+- Copy relative paths for one or more selected files in Source Control
+- Works from the Git/SCM Source Control context menu in VS Code
 
 ## Usage
 
 1. Open the Source Control view in VS Code.
-2. Select one or more changed files.
+2. Select one or more changed Git or SCM files.
 3. Right-click the selection.
 4. Choose one of:
    - `Copy Selected Paths`
    - `Copy Selected Relative Paths`
 
-Copied paths are written to the clipboard as newline-separated text.
+Copied file paths are written to the clipboard as newline-separated text.
+
+## What This Extension Is For
+
+This extension is for developers who want to copy multiple file paths from the VS Code Source Control panel at once. It is useful when working with Git changes, SCM file selections, code review workflows, terminal commands, and commit-related file lists.
 
 ## Commands
 

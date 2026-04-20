@@ -1,9 +1,9 @@
 {
   "name": "copy-paths-from-source-control",
   "displayName": "Copy Paths from Source Control",
-  "description": "Copy multiple file paths directly from the Source Control panel in VS Code.",
+  "description": "Copy full or relative paths for multiple selected files directly from the Source Control (Git/SCM) panel in VS Code.",
   "version": "0.0.1",
-  "publisher": "YOUR_PUBLISHER_ID",
+  "publisher": "Conecta",
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -30,7 +30,12 @@
     "source control",
     "scm",
     "files",
-    "paths"
+    "paths",
+    "relative path",
+    "full path",
+    "git files",
+    "source control files",
+    "scm paths"
   ],
   "activationEvents": [
     "onView:scm",
