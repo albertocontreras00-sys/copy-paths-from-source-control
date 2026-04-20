@@ -2,7 +2,7 @@
 
 Copy full or relative file paths for multiple selected files directly from VS Code's Source Control panel.
 
-![Copy Paths from Source Control demo](images/demo_vs.gif)
+![Copy Paths from Source Control demo](https://raw.githubusercontent.com/albertocontreras00-sys/copy-paths-from-source-control/main/images/demo_vs.gif)
 
 ## Features
 
