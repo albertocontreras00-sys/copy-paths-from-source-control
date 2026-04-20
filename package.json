@@ -1,0 +1,75 @@
+{
+  "name": "copy-paths-from-source-control",
+  "displayName": "Copy Paths from Source Control",
+  "description": "Copy multiple file paths directly from the Source Control panel in VS Code.",
+  "version": "0.0.1",
+  "publisher": "YOUR_PUBLISHER_ID",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertocontreras00-sys/copy-paths-from-source-control.git"
+  },
+  "homepage": "https://github.com/albertocontreras00-sys/copy-paths-from-source-control",
+  "bugs": {
+    "url": "https://github.com/albertocontreras00-sys/copy-paths-from-source-control/issues"
+  },
+  "categories": [
+    "Other",
+    "Source Control"
+  ],
+  "keywords": [
+    "copy path",
+    "copy file path",
+    "multiple paths",
+    "multi select",
+    "git",
+    "source control",
+    "scm",
+    "files",
+    "paths"
+  ],
+  "activationEvents": [
+    "onView:scm",
+    "onCommand:scmCopyPaths.copySelectedPaths",
+    "onCommand:scmCopyPaths.copySelectedRelativePaths"
+  ],
+  "main": "./extension.js",
+  "files": [
+    "extension.js",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "images/**"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "scmCopyPaths.copySelectedPaths",
+        "title": "Copy Selected Paths"
+      },
+      {
+        "command": "scmCopyPaths.copySelectedRelativePaths",
+        "title": "Copy Selected Relative Paths"
+      }
+    ],
+    "menus": {
+      "scm/resourceState/context": [
+        {
+          "command": "scmCopyPaths.copySelectedPaths",
+          "when": "scmProvider == git",
+          "group": "navigation@100"
+        },
+        {
+          "command": "scmCopyPaths.copySelectedRelativePaths",
+          "when": "scmProvider == git",
+          "group": "navigation@101"
+        }
+      ]
+    }
+  }
+}
